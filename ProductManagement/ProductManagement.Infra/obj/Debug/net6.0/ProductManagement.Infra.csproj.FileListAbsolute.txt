@@ -1,0 +1,15 @@
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Infra.deps.json
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Infra.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Infra.pdb
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Domain.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Domain.pdb
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.csproj.AssemblyReference.cache
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.AssemblyInfoInputs.cache
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.AssemblyInfo.cs
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.csproj.CoreCompileInputs.cache
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.csproj.CopyComplete
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\refint\ProductManagement.Infra.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.pdb
+C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ref\ProductManagement.Infra.dll

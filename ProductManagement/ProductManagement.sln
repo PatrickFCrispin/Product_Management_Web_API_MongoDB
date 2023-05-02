@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Domain", "ProductManagement.Domain\ProductManagement.Domain.csproj", "{6C42FDAD-BAED-44EE-BC9B-A0BF848B4B89}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Infra", "ProductManagement.Infra\ProductManagement.Infra.csproj", "{D00345D6-BD5E-44FD-8516-42E6AEB151CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.API", "ProductManagement.API\ProductManagement.API.csproj", "{2C1FB1F9-CCBF-420F-A20A-C38A6BCDA280}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CF425B0-A9AB-45B5-B6B3-FC08842260A2}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\ProductManagementMongoDB_Collection_Requests_2023-05-02 = ..\..\ProductManagementMongoDB_Collection_Requests_2023-05-02
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C42FDAD-BAED-44EE-BC9B-A0BF848B4B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C42FDAD-BAED-44EE-BC9B-A0BF848B4B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C42FDAD-BAED-44EE-BC9B-A0BF848B4B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C42FDAD-BAED-44EE-BC9B-A0BF848B4B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00345D6-BD5E-44FD-8516-42E6AEB151CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00345D6-BD5E-44FD-8516-42E6AEB151CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00345D6-BD5E-44FD-8516-42E6AEB151CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00345D6-BD5E-44FD-8516-42E6AEB151CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C1FB1F9-CCBF-420F-A20A-C38A6BCDA280}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C1FB1F9-CCBF-420F-A20A-C38A6BCDA280}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C1FB1F9-CCBF-420F-A20A-C38A6BCDA280}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C1FB1F9-CCBF-420F-A20A-C38A6BCDA280}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97190324-00F3-47E6-8D68-0AE1FBE86B40}
+	EndGlobalSection
+EndGlobal
