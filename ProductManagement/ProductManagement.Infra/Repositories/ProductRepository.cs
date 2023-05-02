@@ -2,7 +2,6 @@
 using MongoDB.Driver;
 using ProductManagement.Domain.Entities;
 using ProductManagement.Domain.Interfaces;
-using ProductManagement.Infra.Settings;
 
 namespace ProductManagement.Infra.Repositories
 {

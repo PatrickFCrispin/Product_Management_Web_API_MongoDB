@@ -5,7 +5,6 @@ using ProductManagement.API.ViewModels;
 using ProductManagement.Domain.Entities;
 using ProductManagement.Domain.Interfaces;
 using ProductManagement.Infra.Repositories;
-using ProductManagement.Infra.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 

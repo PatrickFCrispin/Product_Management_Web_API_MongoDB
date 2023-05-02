@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EGeCr/JWI+5hcv0rzGkvJ0XvIWs8aLkmFGY16Za07Fr0PZtnEmqXsBnqPMISkwhHfVdCDKA8Njz+C4uk/paVbw==",
+  "dgSpecHash": "v6CP4JYHdtmh9WptHau4bALqBG7lOeMtbz/vJV8FUouD5FLLQUqdn6MKFxM+XHM84svPwdrDL9ZlTRWf3p6TFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\ProductManagement\\ProductManagement\\ProductManagement.API\\ProductManagement.API.csproj",
+  "projectFilePath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.API\\ProductManagement.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Patri\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Patri\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
