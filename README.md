@@ -7,7 +7,7 @@ Trata-se de um CRUD de Gerenciamento de Produto, onde é possível adicionar pro
 
 ## Installation
 - Visual Studio
-	- Baixar e instalar o Visual Studio (caso não possuir, recomendado o 2022).
+	- Baixar e instalar o Visual Studio (recomendado o 2022).
 - Clonar o projeto.
 
 ## Usage
