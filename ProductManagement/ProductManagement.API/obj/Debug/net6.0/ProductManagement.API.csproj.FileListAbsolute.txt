@@ -52,7 +52,6 @@ C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\Pr
 C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.API\obj\Debug\net6.0\ProductManagement.API.pdb
 C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.API\obj\Debug\net6.0\ProductManagement.API.genruntimeconfig.cache
 C:\Users\Patri\OneDrive\Área de Trabalho\ProductManagement\ProductManagement\ProductManagement.API\obj\Debug\net6.0\ref\ProductManagement.API.dll
-C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\appsettings.json
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\ProductManagement.API.exe
@@ -79,6 +78,7 @@ C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\Pro
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\ZstdSharp.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.API\bin\Debug\net6.0\ProductManagement.Domain.dll
