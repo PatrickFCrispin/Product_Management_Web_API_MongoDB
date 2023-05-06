@@ -9,11 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.Infra", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.API", "ProductManagement.API\ProductManagement.API.csproj", "{2C1FB1F9-CCBF-420F-A20A-C38A6BCDA280}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CF425B0-A9AB-45B5-B6B3-FC08842260A2}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\Insomnia_2023-05-06.json = ..\..\Insomnia_2023-05-06.json
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<MongoDBSettings>(
-    builder.Configuration.GetSection("ProductManagementDB"));
+    builder.Configuration.GetSection("MongoDBSettings"));
 
 var mapperConfiguration = new MapperConfiguration(cfg =>
 {
