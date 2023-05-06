@@ -7,12 +7,11 @@ Trata-se de um CRUD de Gerenciamento de Produto, onde é possível adicionar pro
 
 ## Installation
 - Visual Studio
-	- Baixar e instalar o Visual Studio (recomendo o 2022).
+    - Baixar e instalar o Visual Studio (recomendo o 2022).
 - Clonar o projeto.
 
 ## Usage
 - Compilar o projeto no Visual Studio (Clean e Rebuild).
 - Rodar o projeto (F5).
-- Recomendo Insomnia ou Postman para realizar as requests
-  - O arquivo .json com as requests encontra-se em **Solution Items**
+- Recomendo Insomnia ou Postman para realizar as chamadas
 - Recomendo o uso da interface Robo3T (https://robomongo.org/) para vizualização do banco MongoDB e seus registros.
