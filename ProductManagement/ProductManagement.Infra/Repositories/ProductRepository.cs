@@ -12,7 +12,7 @@ namespace ProductManagement.Infra.Repositories
         public ProductRepository(IOptions<MongoDBSettings> options)
         {
             var mongoClient = new MongoClient(options.Value.ConnectionString);
-            var mongoDatabase = mongoClient.GetDatabase(options.Value.DBName);
+            var mongoDatabase = mongoClient.GetDatabase(options.Value.DatabaseName);
             _mongoCollection = mongoDatabase.GetCollection<ProductEntity>(options.Value.CollectionName);
         }
 
@@ -54,7 +54,7 @@ namespace ProductManagement.Infra.Repositories
                 if (productToBeUpdated is null) { return false; }
 
                 productToBeUpdated.Name = productEntity.Name;
-                productToBeUpdated.Cost = productEntity.Cost;
+                productToBeUpdated.Price = productEntity.Price;
                 productToBeUpdated.Supplier = productEntity.Supplier;
                 productToBeUpdated.Active = productEntity.Active;
                 productToBeUpdated.ModifiedAt = DateTime.Now;

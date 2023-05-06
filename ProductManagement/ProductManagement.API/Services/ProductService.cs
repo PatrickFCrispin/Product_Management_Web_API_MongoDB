@@ -34,7 +34,7 @@ namespace ProductManagement.API.Services
                     {
                         Id = productEntity.Id,
                         Name = productEntity.Name,
-                        Cost = productEntity.Cost,
+                        Price = productEntity.Price,
                         Supplier = productEntity.Supplier,
                         Active = productEntity.Active,
                         RegisteredAt = productEntity.RegisteredAt,
@@ -63,7 +63,7 @@ namespace ProductManagement.API.Services
                 {
                     Id = x.Id,
                     Name = x.Name,
-                    Cost = x.Cost,
+                    Price = x.Price,
                     Supplier = x.Supplier,
                     Active = x.Active,
                     RegisteredAt = x.RegisteredAt,

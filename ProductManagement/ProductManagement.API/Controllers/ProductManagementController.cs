@@ -38,7 +38,7 @@ namespace ProductManagement.API.Controllers
                     "GetProductById::Info -> Id {id}, Nome {name}, Preço {cost}, Fornecedor {supplier}, Ativo {active}, Cadastrado em {registeredAt}, Editado em {modifiedAt}",
                     response.Data.Id,
                     response.Data.Name,
-                    response.Data.Cost,
+                    response.Data.Price,
                     response.Data.Supplier,
                     response.Data.Active,
                     response.Data.RegisteredAt,

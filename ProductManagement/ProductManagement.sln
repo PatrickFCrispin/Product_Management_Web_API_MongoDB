@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductManagement.API", "Pr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CF425B0-A9AB-45B5-B6B3-FC08842260A2}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\ProductManagementMongoDB_Collection_Requests_2023-05-02 = ..\..\ProductManagementMongoDB_Collection_Requests_2023-05-02
+		..\..\Insomnia_2023-05-06.json = ..\..\Insomnia_2023-05-06.json
 	EndProjectSection
 EndProject
 Global
