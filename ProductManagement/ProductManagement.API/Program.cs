@@ -1,7 +1,6 @@
 using AutoMapper;
 using ProductManagement.API.DTOs;
 using ProductManagement.API.Services;
-using ProductManagement.API.ViewModels;
 using ProductManagement.Domain.Entities;
 using ProductManagement.Domain.Interfaces;
 using ProductManagement.Infra.Repositories;
@@ -20,7 +19,6 @@ builder.Services.Configure<MongoDBSettings>(
 
 var mapperConfiguration = new MapperConfiguration(cfg =>
 {
-    cfg.CreateMap<ProductViewModel, ProductDTO>();
     cfg.CreateMap<ProductDTO, ProductEntity>();
 });
 IMapper mapper = mapperConfiguration.CreateMapper();

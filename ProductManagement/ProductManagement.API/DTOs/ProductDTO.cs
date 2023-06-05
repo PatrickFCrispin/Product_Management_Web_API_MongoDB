@@ -1,4 +1,6 @@
-﻿namespace ProductManagement.API.DTOs
+﻿using FluentValidation;
+
+namespace ProductManagement.API.DTOs
 {
     public class ProductDTO
     {
@@ -9,5 +11,21 @@
         public bool Active { get; set; }
         public DateTime RegisteredAt { get; set; }
         public DateTime ModifiedAt { get; set; }
+    }
+
+    public class ProductDTOValidator : AbstractValidator<ProductDTO>
+    {
+        public ProductDTOValidator()
+        {
+            RuleFor(product => product.Name)
+                .NotEmpty()
+                .WithMessage("O Nome do produto é obrigatório e deve ser informado.");
+            RuleFor(product => product.Price)
+                .GreaterThan(0m)
+                .WithMessage("O Preço do produto deve ser maior que 0.");
+            RuleFor(product => product.Supplier)
+                .NotEmpty()
+                .WithMessage("O Fornecedor do produto é obrigatório e deve ser informado.");
+        }
     }
 }

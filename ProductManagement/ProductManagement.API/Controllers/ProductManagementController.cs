@@ -1,9 +1,7 @@
-using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using ProductManagement.API.DTOs;
 using ProductManagement.API.Responses;
 using ProductManagement.API.Services;
-using ProductManagement.API.ViewModels;
 
 namespace ProductManagement.API.Controllers
 {
@@ -12,13 +10,11 @@ namespace ProductManagement.API.Controllers
     public class ProductManagementController : ControllerBase
     {
         private readonly IProductService _productService;
-        private readonly IMapper _mapper;
         private readonly ILogger<ProductManagementController> _logger;
 
-        public ProductManagementController(IProductService productService, IMapper mapper, ILogger<ProductManagementController> logger)
+        public ProductManagementController(IProductService productService, ILogger<ProductManagementController> logger)
         {
             _productService = productService;
-            _mapper = mapper;
             _logger = logger;
         }
 
@@ -30,12 +26,12 @@ namespace ProductManagement.API.Controllers
             {
                 if (response.Data is null)
                 {
-                    _logger.LogInformation("GetProductById::Info -> {message}", response.Message);
+                    _logger.LogInformation("GetProductByIdAsync::Info -> {message}", response.Message);
                     return NotFound(response);
                 }
 
                 _logger.LogInformation(
-                    "GetProductById::Info -> Id {id}, Nome {name}, Preço {price}, Fornecedor {supplier}, Ativo {active}, Cadastrado em {registeredAt}, Editado em {modifiedAt}",
+                    "GetProductByIdAsync::Info -> Id {id}, Nome {name}, Preço {price}, Fornecedor {supplier}, Ativo {active}, Cadastrado em {registeredAt}, Editado em {modifiedAt}",
                     response.Data.Id,
                     response.Data.Name,
                     response.Data.Price,
@@ -46,7 +42,7 @@ namespace ProductManagement.API.Controllers
                 return Ok(response);
             }
 
-            _logger.LogError("GetProductById::Error -> {error}", response.Message);
+            _logger.LogError("GetProductByIdAsync::Error -> {error}", response.Message);
             return BadRequest(response);
         }
 
@@ -56,22 +52,22 @@ namespace ProductManagement.API.Controllers
             var response = await _productService.GetProductsAsync();
             if (response.Success)
             {
-                _logger.LogInformation("GetProducts::Info -> Quantidade de produtos cadastrados {count}", response.Data.ToList().Count);
+                _logger.LogInformation("GetProductsAsync::Info -> Quantidade de produtos cadastrados {count}", response.Data?.ToList().Count);
                 return Ok(response);
             }
 
-            _logger.LogError("GetProducts::Error -> {error}", response.Message);
+            _logger.LogError("GetProductsAsync::Error -> {error}", response.Message);
             return BadRequest(response);
         }
 
         [HttpPost] // api/products
-        public async Task<ActionResult> AddProductAsync([FromBody] ProductViewModel productViewModel)
+        //If there was views, we can use view models instead of dto. Same for UpdateProductAsync.
+        public async Task<ActionResult> AddProductAsync([FromBody] ProductDTO productDTO)
         {
-            var validator = new ProductViewModelValidator();
-            var validationResult = validator.Validate(productViewModel);
+            var validator = new ProductDTOValidator();
+            var validationResult = validator.Validate(productDTO);
             if (validationResult.IsValid)
             {
-                var productDTO = _mapper.Map<ProductDTO>(productViewModel);
                 var response = await _productService.AddProductAsync(productDTO);
                 if (response.Success)
                 {
@@ -83,18 +79,17 @@ namespace ProductManagement.API.Controllers
                 return BadRequest(response);
             }
 
-            var errors = ErrorResponse.ToErrorResult(validationResult.Errors);
+            var errors = ErrorResponse.ToErrorResponse(validationResult.Errors);
             return BadRequest(errors);
         }
 
         [HttpPut("{id:length(24)}")] // api/products/id
-        public async Task<ActionResult> UpdateProductAsync(string id, [FromBody] ProductViewModel productViewModel)
+        public async Task<ActionResult> UpdateProductAsync(string id, [FromBody] ProductDTO productDTO)
         {
-            var validator = new ProductViewModelValidator();
-            var validationResult = validator.Validate(productViewModel);
+            var validator = new ProductDTOValidator();
+            var validationResult = validator.Validate(productDTO);
             if (validationResult.IsValid)
             {
-                var productDTO = _mapper.Map<ProductDTO>(productViewModel);
                 var response = await _productService.UpdateProductAsync(id, productDTO);
                 if (response.Success)
                 {
@@ -106,7 +101,7 @@ namespace ProductManagement.API.Controllers
                 return BadRequest(response);
             }
 
-            var errors = ErrorResponse.ToErrorResult(validationResult.Errors);
+            var errors = ErrorResponse.ToErrorResponse(validationResult.Errors);
             return BadRequest(errors);
         }
 

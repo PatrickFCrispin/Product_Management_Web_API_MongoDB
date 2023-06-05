@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using ProductManagement.API.DTOs;
 using ProductManagement.API.Responses;
-using ProductManagement.API.ViewModels;
 using ProductManagement.Domain.Entities;
 using ProductManagement.Domain.Interfaces;
 
@@ -18,9 +17,9 @@ namespace ProductManagement.API.Services
             _mapper = mapper;
         }
 
-        public async Task<ServiceResponse<ProductViewModel>> GetProductByIdAsync(string id)
+        public async Task<ServiceResponse<ProductDTO>> GetProductByIdAsync(string id)
         {
-            var response = new ServiceResponse<ProductViewModel>();
+            var response = new ServiceResponse<ProductDTO>();
             try
             {
                 var productEntity = await _productRepository.GetProductByIdAsync(id);
@@ -30,7 +29,7 @@ namespace ProductManagement.API.Services
                 }
                 else
                 {
-                    response.Data = new ProductViewModel
+                    response.Data = new ProductDTO
                     {
                         Id = productEntity.Id,
                         Name = productEntity.Name,
@@ -53,13 +52,13 @@ namespace ProductManagement.API.Services
             return response;
         }
 
-        public async Task<ServiceCollectionResponse<ProductViewModel>> GetProductsAsync()
+        public async Task<ServiceCollectionResponse<ProductDTO>> GetProductsAsync()
         {
-            var response = new ServiceCollectionResponse<ProductViewModel>();
+            var response = new ServiceCollectionResponse<ProductDTO>();
             try
             {
                 var products = await _productRepository.GetProductsAsync();
-                response.Data = products.Select(x => new ProductViewModel
+                response.Data = products.Select(x => new ProductDTO
                 {
                     Id = x.Id,
                     Name = x.Name,
