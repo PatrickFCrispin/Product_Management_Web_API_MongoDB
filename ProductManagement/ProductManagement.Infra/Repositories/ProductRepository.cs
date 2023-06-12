@@ -22,7 +22,7 @@ namespace ProductManagement.Infra.Repositories
             {
                 return await _mongoCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
             }
-            catch { throw; }
+            catch (Exception) { throw; }
         }
 
         public async Task<IEnumerable<ProductEntity>> GetProductsAsync()
@@ -31,7 +31,7 @@ namespace ProductManagement.Infra.Repositories
             {
                 return await _mongoCollection.Find(_ => true).ToListAsync();
             }
-            catch { throw; }
+            catch (Exception) { throw; }
         }
 
         public async Task AddProductAsync(ProductEntity productEntity)
@@ -43,7 +43,7 @@ namespace ProductManagement.Infra.Repositories
 
                 await _mongoCollection.InsertOneAsync(productEntity);
             }
-            catch { throw; }
+            catch (Exception) { throw; }
         }
 
         public async Task<bool> UpdateProductAsync(string id, ProductEntity productEntity)
@@ -63,7 +63,7 @@ namespace ProductManagement.Infra.Repositories
 
                 return true;
             }
-            catch { throw; }
+            catch (Exception) { throw; }
         }
 
         public async Task<bool> RemoveProductByIdAsync(string id)
@@ -76,7 +76,7 @@ namespace ProductManagement.Infra.Repositories
 
                 return true;
             }
-            catch { throw; }
+            catch (Exception) { throw; }
         }
     }
 }
