@@ -79,7 +79,7 @@ namespace ProductManagement.API.Controllers
                 return BadRequest(response);
             }
 
-            var errors = ErrorResponse.ToErrorResponse(validationResult.Errors);
+            var errors = validationResult.Errors.ToErrorResponse();
             return BadRequest(errors);
         }
 
@@ -101,7 +101,7 @@ namespace ProductManagement.API.Controllers
                 return BadRequest(response);
             }
 
-            var errors = ErrorResponse.ToErrorResponse(validationResult.Errors);
+            var errors = validationResult.Errors.ToErrorResponse();
             return BadRequest(errors);
         }
 

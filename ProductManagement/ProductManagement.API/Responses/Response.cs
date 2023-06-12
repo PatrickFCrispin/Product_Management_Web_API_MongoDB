@@ -20,7 +20,7 @@ namespace ProductManagement.API.Responses
 
     public static class ErrorResponse
     {
-        public static Dictionary<string, string> ToErrorResponse(List<ValidationFailure> input)
+        public static Dictionary<string, string> ToErrorResponse(this List<ValidationFailure> input)
         {
             var index = 0;
             var errors = new Dictionary<string, string>();
@@ -31,6 +31,6 @@ namespace ProductManagement.API.Responses
             };
 
             return errors;
-        } 
+        }
     }
 }
