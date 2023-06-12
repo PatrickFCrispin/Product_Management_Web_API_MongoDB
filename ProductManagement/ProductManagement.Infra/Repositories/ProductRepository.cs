@@ -58,6 +58,7 @@ namespace ProductManagement.Infra.Repositories
                 productToBeUpdated.Supplier = productEntity.Supplier;
                 productToBeUpdated.Active = productEntity.Active;
                 productToBeUpdated.ModifiedAt = DateTime.Now;
+
                 await _mongoCollection.ReplaceOneAsync(x => x.Id == id, productToBeUpdated);
 
                 return true;

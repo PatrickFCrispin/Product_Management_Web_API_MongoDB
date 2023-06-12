@@ -18,7 +18,7 @@ namespace ProductManagement.API.Responses
         public string? Message { get; set; }
     }
 
-    public class ErrorResponse
+    public static class ErrorResponse
     {
         public static Dictionary<string, string> ToErrorResponse(List<ValidationFailure> input)
         {
