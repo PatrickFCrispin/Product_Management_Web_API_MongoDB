@@ -6,7 +6,7 @@ Trata-se de um CRUD de Gerenciamento de Produto, onde é possível adicionar pro
 
 ## Installation
 - Visual Studio
-    - Baixar e instalar o Visual Studio (recomendo o 2022).
+    - Baixar e instalar (recomendo o 2022).
 - MongoDB
     - Baixar e instalar (https://www.mongodb.com/)
 - Clonar o projeto.
