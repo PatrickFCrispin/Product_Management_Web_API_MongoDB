@@ -7,20 +7,34 @@ namespace ProductManagement.Infra.Repositories
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly IMongoCollection<ProductEntity> _mongoCollection;
+        private readonly IOptions<MongoDBSettings> _options;
+        private IMongoCollection<ProductEntity> _mongoCollection;
 
         public ProductRepository(IOptions<MongoDBSettings> options)
         {
-            var mongoClient = new MongoClient(options.Value.ConnectionString);
-            var mongoDatabase = mongoClient.GetDatabase(options.Value.DatabaseName);
-            _mongoCollection = mongoDatabase.GetCollection<ProductEntity>(options.Value.CollectionName);
+            _options = options;
+        }
+
+        public IMongoCollection<ProductEntity> MongoCollection
+        {
+            get
+            {
+                if (_mongoCollection is null)
+                {
+                    var mongoClient = new MongoClient(_options.Value.ConnectionString);
+                    var mongoDatabase = mongoClient.GetDatabase(_options.Value.DatabaseName);
+                    _mongoCollection = mongoDatabase.GetCollection<ProductEntity>(_options.Value.CollectionName);
+                }
+
+                return _mongoCollection;
+            }
         }
 
         public async Task<ProductEntity?> GetProductByIdAsync(string id)
         {
             try
             {
-                return await _mongoCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+                return await MongoCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
             }
             catch (Exception) { throw; }
         }
@@ -29,7 +43,7 @@ namespace ProductManagement.Infra.Repositories
         {
             try
             {
-                return await _mongoCollection.Find(_ => true).ToListAsync();
+                return await MongoCollection.Find(_ => true).ToListAsync();
             }
             catch (Exception) { throw; }
         }
@@ -41,7 +55,7 @@ namespace ProductManagement.Infra.Repositories
                 productEntity.Active = true;
                 productEntity.RegisteredAt = productEntity.ModifiedAt = DateTime.Now;
 
-                await _mongoCollection.InsertOneAsync(productEntity);
+                await MongoCollection.InsertOneAsync(productEntity);
             }
             catch (Exception) { throw; }
         }
@@ -59,7 +73,7 @@ namespace ProductManagement.Infra.Repositories
                 productToBeUpdated.Active = productEntity.Active;
                 productToBeUpdated.ModifiedAt = DateTime.Now;
 
-                await _mongoCollection.ReplaceOneAsync(x => x.Id == id, productToBeUpdated);
+                await MongoCollection.ReplaceOneAsync(x => x.Id == id, productToBeUpdated);
 
                 return true;
             }
@@ -72,7 +86,7 @@ namespace ProductManagement.Infra.Repositories
             {
                 if (await GetProductByIdAsync(id) is null) { return false; }
 
-                await _mongoCollection.DeleteOneAsync(x => x.Id == id);
+                await MongoCollection.DeleteOneAsync(x => x.Id == id);
 
                 return true;
             }
