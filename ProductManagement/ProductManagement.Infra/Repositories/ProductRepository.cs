@@ -8,7 +8,7 @@ namespace ProductManagement.Infra.Repositories
     public class ProductRepository : IProductRepository
     {
         private readonly IOptions<MongoDBSettings> _options;
-        private IMongoCollection<ProductEntity> _mongoCollection;
+        private IMongoCollection<ProductEntity>? _mongoCollection;
 
         public ProductRepository(IOptions<MongoDBSettings> options)
         {
