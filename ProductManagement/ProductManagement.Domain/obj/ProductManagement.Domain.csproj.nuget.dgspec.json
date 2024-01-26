@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {}
+    "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {
+    "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj",
         "projectName": "ProductManagement.Domain",
-        "projectPath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\Patri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\obj\\",
+        "projectPath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\ProductManagement.Domain.csproj",
+        "packagesPath": "C:\\nuget",
+        "outputPath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

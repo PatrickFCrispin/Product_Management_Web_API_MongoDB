@@ -28,3 +28,18 @@ C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\Pro
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\refint\ProductManagement.Infra.dll
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.pdb
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ref\ProductManagement.Infra.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Infra.deps.json
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Infra.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Infra.pdb
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Domain.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\bin\Debug\net6.0\ProductManagement.Domain.pdb
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.csproj.AssemblyReference.cache
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.AssemblyInfoInputs.cache
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.AssemblyInfo.cs
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.csproj.CoreCompileInputs.cache
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.csproj.CopyComplete
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\refint\ProductManagement.Infra.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ProductManagement.Infra.pdb
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Infra\obj\Debug\net6.0\ref\ProductManagement.Infra.dll

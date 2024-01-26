@@ -22,3 +22,15 @@ C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\Pro
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\refint\ProductManagement.Domain.dll
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.pdb
 C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ref\ProductManagement.Domain.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\bin\Debug\net6.0\ProductManagement.Domain.deps.json
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\bin\Debug\net6.0\ProductManagement.Domain.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\bin\Debug\net6.0\ProductManagement.Domain.pdb
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.csproj.AssemblyReference.cache
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.AssemblyInfoInputs.cache
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.AssemblyInfo.cs
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\refint\ProductManagement.Domain.dll
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ProductManagement.Domain.pdb
+C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Domain\obj\Debug\net6.0\ref\ProductManagement.Domain.dll
