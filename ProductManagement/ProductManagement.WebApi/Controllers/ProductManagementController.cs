@@ -6,7 +6,7 @@ using ProductManagement.Application.Responses;
 namespace ProductManagement.WebApi.Controllers
 {
     [ApiController]
-    [Route("api/products")]
+    [Route("products")]
     public class ProductManagementController : Controller
     {
         private readonly IProductService _productService;
@@ -83,7 +83,7 @@ namespace ProductManagement.WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpPut("{id:length(24)}")] // api/products/id
+        [HttpPatch("{id:length(24)}")] // api/products/id
         public async Task<ActionResult> UpdateProductAsync(string id, [FromBody] ProductDTO productDTO)
         {
             var validator = new ProductDTOValidator();

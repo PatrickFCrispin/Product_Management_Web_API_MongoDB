@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "53RMw5GvPJa/hAsuGNJtyW3ozBPaFPEaso5Q2go+D7w91OWXD8QGMerfDoN0QJD5176W55BBW1+GUwxTdNdY6Q==",
+  "dgSpecHash": "C3/6A9nu6X/sdrdL3B1segO3DsMaKTfy+rh13k5FFo6QFpObM4r8xaFqu98zESU22I5Agt0hqDHeSoxgOfQv5A==",
   "success": true,
-  "projectFilePath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\ProductManagement.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\ProductManagement.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\nuget\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\nuget\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\nuget\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\nuget\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",

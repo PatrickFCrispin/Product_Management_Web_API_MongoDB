@@ -17,3 +17,18 @@ C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Applic
 C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\refint\ProductManagement.Application.dll
 C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.pdb
 C:\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ref\ProductManagement.Application.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\bin\Debug\net6.0\ProductManagement.Application.deps.json
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\bin\Debug\net6.0\ProductManagement.Application.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\bin\Debug\net6.0\ProductManagement.Application.pdb
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\bin\Debug\net6.0\ProductManagement.Domain.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\bin\Debug\net6.0\ProductManagement.Domain.pdb
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.csproj.AssemblyReference.cache
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.AssemblyInfoInputs.cache
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.AssemblyInfo.cs
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.csproj.CopyComplete
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\refint\ProductManagement.Application.dll
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ProductManagement.Application.pdb
+C:\Users\Patri\OneDrive\Área de Trabalho\Product_Management_Web_API_MongoDB\ProductManagement\ProductManagement.Application\obj\Debug\net6.0\ref\ProductManagement.Application.dll

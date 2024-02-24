@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YEpgxNsf6lG8jEmCVGd8XANIj4ALd8OQvK48ey9rPS0t1T/dqVfsrRhfS0LvUNHGBDuszZNVg04Xv4Ferv9JfQ==",
+  "dgSpecHash": "wz7LP//eX8Nuqhigxlrn/xLJrDM8oYNtZRB6LcCZVrGogTkLMWpAIMeL3dMasFn+E70weOf8xHBvET43q1Sd6A==",
   "success": true,
-  "projectFilePath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Infra\\ProductManagement.Infra.csproj",
+  "projectFilePath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Infra\\ProductManagement.Infra.csproj",
   "expectedPackageFiles": [
     "C:\\nuget\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\nuget\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

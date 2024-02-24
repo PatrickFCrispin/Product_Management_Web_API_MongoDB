@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "AWSSDK.Core/3.7.100.14": {
         "type": "package",
         "compile": {
@@ -445,6 +461,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
+          "FluentValidation": "11.9.0",
           "ProductManagement.Domain": "1.0.0"
         },
         "compile": {
@@ -485,6 +503,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "AWSSDK.Core/3.7.100.14": {
       "sha512": "gnEgxBlk4PFEfdPE8Lkf4+D16MZFYSaW7/o6Wwe5e035QWUkTJX0Dn4LfTCdV5QSEL/fOFxu+yCAm55eIIBgog==",
       "type": "package",
@@ -1402,7 +1435,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "FluentValidation >= 11.9.0",
       "ProductManagement.Application >= 1.0.0",
       "ProductManagement.Infra >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -1416,11 +1448,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\ProductManagement.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\ProductManagement.WebApi.csproj",
       "projectName": "ProductManagement.WebApi",
-      "projectPath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\ProductManagement.WebApi.csproj",
+      "projectPath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\ProductManagement.WebApi.csproj",
       "packagesPath": "C:\\nuget",
-      "outputPath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1444,11 +1476,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Application\\ProductManagement.Application.csproj": {
-              "projectPath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Application\\ProductManagement.Application.csproj"
+            "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Application\\ProductManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Application\\ProductManagement.Application.csproj"
             },
-            "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Infra\\ProductManagement.Infra.csproj": {
-              "projectPath": "C:\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Infra\\ProductManagement.Infra.csproj"
+            "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Infra\\ProductManagement.Infra.csproj": {
+              "projectPath": "C:\\Users\\Patri\\OneDrive\\Área de Trabalho\\Product_Management_Web_API_MongoDB\\ProductManagement\\ProductManagement.Infra\\ProductManagement.Infra.csproj"
             }
           }
         }
@@ -1463,10 +1495,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "FluentValidation": {
-            "target": "Package",
-            "version": "[11.9.0, )"
-          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
