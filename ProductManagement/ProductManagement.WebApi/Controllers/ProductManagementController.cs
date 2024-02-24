@@ -18,7 +18,7 @@ namespace ProductManagement.WebApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet("{id:length(24)}")] // api/products/id
+        [HttpGet("{id:length(24)}")] // /products/id
         public async Task<ActionResult> GetProductByIdAsync(string id)
         {
             var response = await _productService.GetProductByIdAsync(id);
@@ -46,7 +46,7 @@ namespace ProductManagement.WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpGet] // api/products
+        [HttpGet] // /products
         public async Task<ActionResult> GetProductsAsync()
         {
             var response = await _productService.GetProductsAsync();
@@ -60,7 +60,7 @@ namespace ProductManagement.WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpPost] // api/products
+        [HttpPost] // /products
         //If there was views, we can use view models instead of dto. Same for UpdateProductAsync.
         public async Task<ActionResult> AddProductAsync([FromBody] ProductDTO productDTO)
         {
@@ -83,7 +83,7 @@ namespace ProductManagement.WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpPatch("{id:length(24)}")] // api/products/id
+        [HttpPatch("{id:length(24)}")] // /products/id
         public async Task<ActionResult> UpdateProductAsync(string id, [FromBody] ProductDTO productDTO)
         {
             var validator = new ProductDTOValidator();
@@ -105,7 +105,7 @@ namespace ProductManagement.WebApi.Controllers
             return Ok(response);
         }
 
-        [HttpDelete("{id:length(24)}")] // api/products/id
+        [HttpDelete("{id:length(24)}")] // /products/id
         public async Task<ActionResult> RemoveProductByIdAsync(string id)
         {
             var response = await _productService.RemoveProductByIdAsync(id);
