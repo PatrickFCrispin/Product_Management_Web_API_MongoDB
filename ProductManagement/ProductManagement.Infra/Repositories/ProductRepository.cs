@@ -32,65 +32,45 @@ namespace ProductManagement.Infra.Repositories
 
         public async Task<ProductEntity?> GetProductByIdAsync(string id)
         {
-            try
-            {
-                return await MongoCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
-            }
-            catch (Exception) { throw; }
+            return await MongoCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task<IEnumerable<ProductEntity>> GetProductsAsync()
         {
-            try
-            {
-                return await MongoCollection.Find(_ => true).ToListAsync();
-            }
-            catch (Exception) { throw; }
+            return await MongoCollection.Find(_ => true).ToListAsync();
         }
 
         public async Task AddProductAsync(ProductEntity productEntity)
         {
-            try
-            {
-                productEntity.Active = true;
-                productEntity.RegisteredAt = productEntity.ModifiedAt = DateTime.Now;
+            productEntity.Active = true;
+            productEntity.RegisteredAt = productEntity.ModifiedAt = DateTime.Now;
 
-                await MongoCollection.InsertOneAsync(productEntity);
-            }
-            catch (Exception) { throw; }
+            await MongoCollection.InsertOneAsync(productEntity);
         }
 
         public async Task<bool> UpdateProductAsync(string id, ProductEntity productEntity)
         {
-            try
-            {
-                var productToBeUpdated = await GetProductByIdAsync(id);
-                if (productToBeUpdated is null) { return false; }
+            var productToBeUpdated = await GetProductByIdAsync(id);
+            if (productToBeUpdated is null) { return false; }
 
-                productToBeUpdated.Name = productEntity.Name;
-                productToBeUpdated.Price = productEntity.Price;
-                productToBeUpdated.Supplier = productEntity.Supplier;
-                productToBeUpdated.Active = productEntity.Active;
-                productToBeUpdated.ModifiedAt = DateTime.Now;
+            productToBeUpdated.Name = productEntity.Name;
+            productToBeUpdated.Price = productEntity.Price;
+            productToBeUpdated.Supplier = productEntity.Supplier;
+            productToBeUpdated.Active = productEntity.Active;
+            productToBeUpdated.ModifiedAt = DateTime.Now;
 
-                await MongoCollection.ReplaceOneAsync(x => x.Id == id, productToBeUpdated);
+            await MongoCollection.ReplaceOneAsync(x => x.Id == id, productToBeUpdated);
 
-                return true;
-            }
-            catch (Exception) { throw; }
+            return true;
         }
 
         public async Task<bool> RemoveProductByIdAsync(string id)
         {
-            try
-            {
-                if (await GetProductByIdAsync(id) is null) { return false; }
+            if (await GetProductByIdAsync(id) is null) { return false; }
 
-                await MongoCollection.DeleteOneAsync(x => x.Id == id);
+            await MongoCollection.DeleteOneAsync(x => x.Id == id);
 
-                return true;
-            }
-            catch (Exception) { throw; }
+            return true;
         }
     }
 }
